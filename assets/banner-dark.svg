@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" role="img" aria-label="Adnan Rashid — software engineer, building toward AI engineering">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#bc8cff"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#bc8cff" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#bc8cff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip">
+      <rect id="typed" x="72" y="120" width="0" height="34"/>
+    </clipPath>
+  </defs>
+  <style>
+    .name { font: 700 46px -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; fill: #e6edf3; letter-spacing: -0.5px; }
+    .mono { font: 500 20px ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; fill: #9198a1; }
+    .prompt { fill: #bc8cff; }
+    .deco { fill: none; stroke: #bc8cff; stroke-width: 1.2; }
+    #typed { animation: type 2.8s steps(52, end) 0.7s both; }
+    #cursor { animation: move 2.8s steps(52, end) 0.7s both, blink 1s step-end 3.5s infinite; }
+    @keyframes type { from { width: 0; } to { width: 646px; } }
+    @keyframes move { from { x: 72px; } to { x: 718px; } }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <g class="deco" opacity="0.55">
+    <rect x="748" y="36" width="128" height="128" rx="24"/>
+    <rect x="768" y="56" width="88" height="88" rx="18" opacity="0.7"/>
+    <rect x="788" y="76" width="48" height="48" rx="12" opacity="0.5"/>
+    <rect x="804" y="92" width="16" height="16" rx="5" opacity="0.35"/>
+  </g>
+
+  <rect x="40" y="46" width="6" height="104" rx="3" fill="url(#accent)"/>
+
+  <text class="name" x="72" y="92">Adnan Rashid</text>
+  <rect x="72" y="106" width="560" height="2" fill="url(#fade)"/>
+
+  <text class="mono prompt" x="48" y="146">›</text>
+  <text class="mono" x="72" y="146" textLength="646" lengthAdjust="spacing" clip-path="url(#clip)">software engineer  ·  building toward AI engineering</text>
+  <rect id="cursor" x="72" y="128" width="10" height="24" fill="#bc8cff" opacity="0.9"/>
+</svg>
